@@ -7,6 +7,7 @@ Every node's disk storage is repersented as a directory
 ![](DN_storage_struct.png)
 
 As seen from the storage structure
+
     -> Every datanode directory is stored inside path_to_datanodes directory.
     
     -> Every datanode stores it's logs in dn_log directory. Datanode logs file contains all operations performd on the datanode since it's creation
@@ -15,6 +16,7 @@ As seen from the storage structure
 
 ### Datanode directory contents:
 Every valid datanode directory has:
+
     -> alloc.txt
     
     -> attr.pkl
@@ -23,6 +25,7 @@ Every valid datanode directory has:
 
 strg.txt holds a string of charecters of length = datanode_size * block_size
 attr.pkl holds the object of class DN_attr which has the attributes for proper functioning of datanode:
+
     -> id : datanode id num
     
     -> dn_dir : datanode_directory
