@@ -8,21 +8,29 @@ Every node's disk storage is repersented as a directory
 
 As seen from the storage structure
     -> Every datanode directory is stored inside path_to_datanodes directory.
+    
     -> Every datanode stores it's logs in dn_log directory. Datanode logs file contains all operations performd on the datanode since it's creation
+    
     -> Every datanode directory has 3 files namely: alloc.txt, attr.pkl, strg.txt
 
 ### Datanode directory contents:
 Every valid datanode directory has:
     -> alloc.txt
+    
     -> attr.pkl
+    
     -> strg.txt
 
 strg.txt holds a string of charecters of length = datanode_size * block_size
 attr.pkl holds the object of class DN_attr which has the attributes for proper functioning of datanode:
     -> id : datanode id num
+    
     -> dn_dir : datanode_directory
+    
     -> block_size
+    
     -> datanode_size
+    
     -> datanode_log_path : path to the log directory
 
 alloc.txt holds the allocation details of each block in strg.txt. It has datanode_size entries
