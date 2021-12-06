@@ -1,0 +1,13 @@
+{
+    "fs_name":"My_dfs",
+    "nn_dir" :"p_namenode",
+    "dn_dir" : "DataNodes",
+    "rep_factor" : 3,
+    "num_datanodes" : 5,
+    "block_size" : 10,
+    "dn_size" : 10,
+    "dn_log_path": "DataNodes\\logs",
+    "nn_log_path": "p_namenode\\logs.txt",
+    "sync_period": 180,
+    "nn_checkpoints": "p_namenode\\nn_checkpoints"
+}
